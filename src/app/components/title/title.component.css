@@ -1,0 +1,40 @@
+h1{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 2rem;
+    
+}h1>span{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    padding: 0 4rem;
+}
+.ola{
+    align-self: center;
+    font-size: min(7vw, 3rem);
+}.front{
+    align-self: flex-start;
+    font-size: min(15vw, 9rem);
+    line-height: min(15vw, 9rem);
+    transform: scale(1, 1.4);
+    background-color: var(--color1);
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    color: var(--background_color);
+}.dev{
+    align-self: flex-end;
+    font-size: min(18vw, 11rem);
+    transform: scale(1, 1.4);
+}
+
+@media(max-width:670px){
+    .ola{
+        font-size: clamp(1rem, 5vw, 2rem);
+    }.front{
+        font-size: clamp(2rem, 14vw, 5rem);
+    }.dev{
+        font-size: clamp(2rem, 14vw, 5rem);
+    }
+}@media(max-width:480px){
+    h1>span{
+        padding: 0 2rem;
+    }
+}
