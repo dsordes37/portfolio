@@ -1,0 +1,11 @@
+.container{
+    text-align: justify;
+    margin: auto;
+    padding: 5rem 0;
+    width: 65%;
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    
+}strong{
+    color: var(--color2);
+}
