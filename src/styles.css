@@ -2,11 +2,16 @@
 
 @import url('hamburguers.css');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+
 :root{
     --background_color: #000116;
     --words_color: #ffffff;
+    --word_grey: gray;
     --color1: #0008cc;
     --color2: #00b2f0;
+    --translucid_grey: rgba(122, 122, 122, 0.103);
 }
 *{
     margin: 0;
@@ -15,6 +20,7 @@
     font-family: 'Roboto', Arial, sans-serif;
 }body{
     background-color: var(--background_color);
+    
     color: var(--words_color);
 }a{
     color: currentColor;

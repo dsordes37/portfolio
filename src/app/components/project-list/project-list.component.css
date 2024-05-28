@@ -1,0 +1,17 @@
+.container{
+    width: 75%;
+    margin: 3rem auto;
+}
+
+h2{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+.projects{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

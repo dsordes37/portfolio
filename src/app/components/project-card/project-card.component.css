@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    gap: .5rem;
+    width: clamp(200px, 90vw, 270px);
+    
+
+    padding: .5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+    border: 2px solid var(--color2);
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.301);
+
+}.container:hover{
+    background-color: var(--translucid_grey);
+    transform: scale(1.08, 1.08);
+}img{
+    width: 100%;
+    border-radius: 10%;
+}h3{
+    font-size: 210%;
+    text-wrap: wrap;
+    font-family: "Oswald" Arial, Helvetica, sans-serif;
+    color: var(--color2);
+}p{
+    color: var(--word_grey);
+}.right{
+    width: 30%;
+
+}.left{
+    width: 70%;
+}

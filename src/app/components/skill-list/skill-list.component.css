@@ -1,0 +1,22 @@
+.container{
+    padding: 5rem 0;
+    width: 60%;
+    margin: auto;
+    
+}.skills{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}h2{
+    font-family: "Oswald" Arial, Helvetica, sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    padding-bottom: 3rem;
+}
+
+@media(max-width: 360px){
+    .container{
+        width:90%;
+    }
+}
