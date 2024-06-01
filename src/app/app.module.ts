@@ -12,6 +12,7 @@ import { SkillListComponent } from './components/skill-list/skill-list.component
 import { SkillComponent } from './components/skill/skill.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProjectListComponent } from './components/project-list/project-list.com
     SkillListComponent,
     SkillComponent,
     ProjectCardComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

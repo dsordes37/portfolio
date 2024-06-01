@@ -1,7 +1,7 @@
 .container{
     display: flex;
     gap: .5rem;
-    width: clamp(200px, 90vw, 270px);
+    width: clamp(200px, 90vw, 300px);
     
 
     padding: .5rem;
@@ -21,7 +21,6 @@
 }h3{
     font-size: 210%;
     text-wrap: wrap;
-    font-family: "Oswald" Arial, Helvetica, sans-serif;
     color: var(--color2);
 }p{
     color: var(--word_grey);

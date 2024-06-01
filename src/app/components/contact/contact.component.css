@@ -1,0 +1,53 @@
+.container{
+    background-color: var(--background_color);
+    margin: auto;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    
+}h2{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}.meios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+img{
+    width: 8rem;
+}.email{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+    color: var(--background_color);
+    background-color: var(--color1);
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+    
+}
+.email:hover{
+    background-image: none;
+    background-color: transparent;
+    color: var(--color1);
+}
+
+
+
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

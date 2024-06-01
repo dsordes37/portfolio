@@ -27,4 +27,7 @@
     text-decoration: none;
 }a:hover{
     text-decoration: underline;
+}i, svg{
+
+    z-index: 0;
 }
