@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}h1{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}img{
+    object-fit: cover;
+    height: 60vh;
+    border: 2px solid var(--color2);
+    border-radius: 25px;
+}p{
+    width: 60%;
+    text-align: justify;
+}

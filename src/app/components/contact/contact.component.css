@@ -17,7 +17,7 @@
 img{
     width: 8rem;
 }.email{
-    font-size: 3rem;
+    font-size: clamp(1rem, 4.5vw, 3rem);
     font-weight: bold;
     padding: 1rem;
     border: 2px solid var(--color1);

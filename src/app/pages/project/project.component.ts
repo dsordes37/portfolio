@@ -15,7 +15,8 @@ export class ProjectComponent implements OnInit {
   title:string='';
   text:string='';
   ano:string='';
-  demo:string=''
+  demo:string='';
+  github:string=''
   inspirations:string[]=['']
 
   constructor(private route:ActivatedRoute) { }
@@ -33,6 +34,7 @@ export class ProjectComponent implements OnInit {
     this.title=result.nome;
     this.ano=result.ano;
     this.demo=result.demo_url;
+    this.github=result.github_url;
     this.inspirations=result.insperations;
 
   }
