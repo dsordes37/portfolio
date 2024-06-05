@@ -1,7 +1,7 @@
 
 export const projects:any[]=[
     {
-        id:0,
+        id:'0',
         nome:"portfolio",
         ano:'2024',
         laptop_img:"../assets/images/portfolio_laptop.png",
@@ -12,7 +12,7 @@ export const projects:any[]=[
         ]
     },
     {
-        id:1,
+        id:'1',
         nome:"the blog",
         ano:'2024',
         laptop_img:"../assets/images/theblog_laptop.png",
@@ -21,7 +21,7 @@ export const projects:any[]=[
         insperations:[]
     },
     {
-        id:2,
+        id:'2',
         nome:"translater",
         ano:'2024',
         laptop_img:"../assets/images/translate_laptop.png",

@@ -11,6 +11,8 @@ export class ProjectCardComponent implements OnInit {
   @Input() cell_img:string='../assets/images/portfolio_cel.png';
   @Input() name:string='portfolio';
   @Input() year:string='2024';
+  @Input() url:string='project/0'
+  
 
   constructor() { }
 
