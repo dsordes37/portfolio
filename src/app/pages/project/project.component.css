@@ -6,14 +6,26 @@
     align-items: center;
 }h1{
     font-family: "Oswald", Arial, Helvetica, sans-serif;
-    font-size: 5rem;
+    font-size: clamp(2rem, 15vw, 7rem);
     text-transform: uppercase;
 }img{
     object-fit: cover;
-    height: 60vh;
+    width: max(250px, 70%);
     border: 2px solid var(--color2);
     border-radius: 25px;
-}p{
-    width: 60%;
+    margin: 1rem 0;
+}.cell{
+    width: max(25%, 200px);
+}
+p{
+    width: max(200px, 70%);
     text-align: justify;
+    font-size: 1.3rem;
+}a{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}.site_links{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
 }

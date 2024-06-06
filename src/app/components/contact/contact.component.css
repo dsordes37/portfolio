@@ -15,7 +15,7 @@
     gap: 1rem;
 }
 img{
-    width: 8rem;
+    width: 6.5rem;
 }.email{
     font-size: clamp(1rem, 4.5vw, 3rem);
     font-weight: bold;
