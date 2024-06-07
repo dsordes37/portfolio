@@ -1,16 +1,22 @@
 <section class="container">
     <h1>{{title}}</h1>
     <img src="{{laptop_img}}" alt="layout do site no computador">
+    
     <nav class="site_links">
-        <a href="{{demo}}" target="_blank">acesse</a>
-        <a href="{{github}}" target="_blank">github</a>
+        <a href="{{demo}}" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="{{github}}" target="_blank">repositório <i class="fa-brands fa-github"></i></a>
     </nav>
     <p>{{text}}</p>
+
     <img class="cell" src="{{cell_img}}" alt="layout do site no celular">
 
-    <nav>
-        <a href="{{i}}" *ngFor="let i of inspirations">{{i}}</a>
-    </nav>
+    <div *ngIf="inspirations!=null" class="inpirations">
+        <h2>Inspirações e Referências.</h2>
+        <nav>
+            <a href="{{i.url}}" *ngFor="let i of inspirations">{{i.name}}</a>
+        </nav>
+    </div>
+    <hr>
 </section>
 
 

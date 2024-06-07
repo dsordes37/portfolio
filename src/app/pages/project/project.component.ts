@@ -17,7 +17,7 @@ export class ProjectComponent implements OnInit {
   ano:string='';
   demo:string='';
   github:string=''
-  inspirations:string[]=[''];
+  inspirations:{url:string, name:string}[]|null=null
 
   constructor(private route:ActivatedRoute) {
     this.route.paramMap.subscribe(value=>this.id=value.get('id'));
@@ -33,11 +33,11 @@ export class ProjectComponent implements OnInit {
     const result=projects.filter(projects=> projects.id==id)[0]
     this.laptop_img=result.laptop_img;
     this.cell_img=result.cell_img;
-    this.title=result.nome;
-    this.ano=result.ano;
+    this.title=result.name;
+    this.ano=result.year;
     this.demo=result.demo_url;
     this.github=result.github_url;
-    this.inspirations=result.insperations;
+    this.inspirations=result.inspirations;
 
   }
 

@@ -14,8 +14,16 @@
     border: 2px solid var(--color2);
     border-radius: 25px;
     margin: 1rem 0;
-}.cell{
-    width: max(25%, 200px);
+ }
+/*.cell_imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    width: max(250px, 70%);
+    gap: 1rem;
+} */
+.cell{
+    width: max(20%, 200px);
 }
 p{
     width: max(200px, 70%);
@@ -24,8 +32,28 @@ p{
 }a{
     font-family: "Oswald", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
+    color: var(--color2);
 }.site_links{
     display: flex;
     gap: 2rem;
     margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+}.inpirations{
+    margin: 3rem 0;
+
+}.inpirations h2{
+    font-size: 2rem;
+}.inpirations nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}hr{
+    border: none;
+    height: 2px;
+    background-color: var(--color2);
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    width: max(100px, 40%);
+    margin: 1rem 0 3rem;
 }

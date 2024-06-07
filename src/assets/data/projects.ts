@@ -2,34 +2,49 @@
 export const projects:any[]=[
     {
         id:'0',
-        nome:"portfolio",
-        ano:'2024',
+        name:"portfolio",
+        year:'2024',
         laptop_img:"../assets/images/portfolio_laptop.png",
         cell_img:"../assets/images/portfolio_cell.png",
         demo_url:"https://dsordes.netlify.app",
-        github_url:"https://github.com/dsordes37",
-        insperations:[
-            "url"
-        ]
+        github_url:"https://github.com/dsordes37/portfolio",
+        inspirations:null
+        
     },
     {
         id:'1',
-        nome:"the blog",
-        ano:'2024',
+        name:"the blog",
+        year:'2024',
         laptop_img:"../assets/images/theblog_laptop.png",
         cell_img:"../assets/images/theblog_cell.png",
         demo_url:"https://theblog-ds.netlify.app",
-        github_url:"https://github.com/dsordes37",
-        insperations:[]
+        github_url:"https://github.com/dsordes37/blog",
+        inspirations:[
+            {
+                url:'url',
+                name:'url'
+            },{
+                url:'url',
+                name:'url'
+            },{
+                url:'url',
+                name:'url'
+            },
+        ]
     },
     {
         id:'2',
-        nome:"translater",
-        ano:'2024',
+        name:"translater",
+        year:'2024',
         laptop_img:"../assets/images/translate_laptop.png",
         cell_img:"../assets/images/translate_cell.png",
         demo_url:"https://translate-ds.netlify.app",
-        github_url:"https://github.com/dsordes37",
-        insperations:[]
+        github_url:"https://github.com/dsordes37/translate_app",
+        inspirations:[
+            {
+                url:'',
+                name:''
+            }
+        ]
     }
 ]
