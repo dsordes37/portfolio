@@ -38,7 +38,9 @@ body{
 }
 
 
-
+.sobe{
+    overflow: hidden;
+}
 .sobe>*{
     transition: .6s ease-out;
 }
