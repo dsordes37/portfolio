@@ -18,8 +18,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
-}body{
+}*::selection{
+    color: var(--words_color);
+    background-color: var(--color1);
+}
+body{
     background-color: var(--background_color);
+    overflow-x: hidden;
     
     color: var(--words_color);
 }a{
@@ -31,3 +36,18 @@
 
     z-index: 0;
 }
+
+
+
+.sobe>*{
+    transition: .6s ease-out;
+}
+
+.inactive> *{
+    transform: translate(100%, 0);
+    opacity: 0;
+}.active> *{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+

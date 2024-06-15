@@ -47,6 +47,7 @@ img{
     width: max(200px, 70%);
     text-align: justify;
     font-size: 1.3rem;
+    margin: auto;
 }
 
 a{

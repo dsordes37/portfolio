@@ -10,15 +10,19 @@
 
     
 
-    <div class="texto" innerHTML="{{text}}" ></div>
-    <nav class="site_links">
+    <div class="sobe inactive">
+        <div class="texto" innerHTML="{{text}}" ></div>
+    </div>
+
+
+    <nav class="site_links sobe inactive">
         <a *ngIf="id!='0'" href="{{demo}}" target="_blank">demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         <a href="{{github}}" target="_blank">repositório <i class="fa-brands fa-github"></i></a>
     </nav>
 
-    <div *ngIf="inspirations!=null" class="inpirations">
+    <div *ngIf="inspirations!=null" class="inpirations sobe inactive">
         <h2>Inspirações e Referências.</h2>
-        <nav>
+        <nav class="sobe inactive">
             <a href="{{i.url}}" target='_blank' *ngFor="let i of inspirations">{{i.name}}</a>
         </nav>
     </div>
