@@ -1,12 +1,16 @@
-<app-header></app-header>
+<header (scroll)="onScroll($event)">
+    <app-header></app-header>
+</header>
 
-<video id="video" src="https://cdn.pixabay.com/video/2024/02/23/201736-916310642_large.mp4" autoplay loop></video>
-<div id="blur"></div>
-
-<div class="space" (scroll)="onScroll($event)"></div>
+<!-- <video id="video" src="https://cdn.pixabay.com/video/2024/02/23/201736-916310642_large.mp4" autoplay loop></video>
+<div id="blur"></div> -->
 
 
-<router-outlet></router-outlet>
+
+<main>
+    
+    <router-outlet></router-outlet>
+</main>
 
 <footer class="sobe inactive">
     
