@@ -4,18 +4,20 @@
     flex-direction: column;
     align-items: center;
     
-
-    
-    
 }.skills{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    width: max(200px,70%);
+    width: 70%;
 }h2{
     font-family: "Oswald" Arial, Helvetica, sans-serif;
     font-size: clamp(2rem, 6vw, 4rem);
     padding-bottom: 3rem;
 }
 
+@media (max-width: 480px){
+    .skills{
+        width: 90%;
+    }
+}

@@ -4,8 +4,9 @@
     </h2>
     <div class="meios">
         <a [routerLink]="['']"><img src="../../../assets/images/logo.png" alt="logo"></a>
-        <div class="email" (click)="copyText('dsordesdinho342@gmail.com')">
-            dsordesdinho342@gmail.com
+
+        <div class="email" (click)="bt_click('dsordesdinho342@gmail.com')"  [ngStyle]="{'background-image': bt_gradient}">
+            {{bt_text}}
         </div>
         <nav>
             <a href="https://github.com/dsordes37" target="_blank">GitHub</a>

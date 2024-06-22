@@ -24,18 +24,17 @@ img{
     border-radius: 10px;
     color: var(--background_color);
     background-color: var(--color1);
-    background-image: linear-gradient(to right, var(--color1), var(--color2));
-    width: fit-content;
+    min-width: 70vw;
     height: fit-content;
     margin: auto;
     cursor: pointer;
-    transition: .2s;
+    transition: .3s;
     position: relative;
     overflow: hidden;
     
 }
 .email:hover{
-    background-image: none;
+    background-image: none !important;
     background-color: transparent;
     color: var(--color1);
 }

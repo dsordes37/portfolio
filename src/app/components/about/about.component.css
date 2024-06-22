@@ -18,7 +18,16 @@
 
     box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.39);
     margin: 10px;
+
+    background-color: var(--background_color);
 }
 strong{
     color: var(--color2);
+}
+
+
+@media (max-width: 480px){
+    p{
+        width: 90%;
+    }
 }

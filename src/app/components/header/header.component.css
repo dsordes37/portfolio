@@ -169,7 +169,7 @@ img{
         align-items: center;
         justify-content: center;
         text-align: center;
-    }app-contact-bt:not(#cell_m app-contact-bt), nav:not(#cell_m nav){
+    }.cont_bt, nav:not(#cell_m nav){
         display: none;
     }#logo{
         position: unset;

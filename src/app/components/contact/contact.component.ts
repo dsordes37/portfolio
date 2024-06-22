@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   copyTop:string='100%'
+  bt_gradient='linear-gradient(to right, var(--color1), var(--color2))'
+  bt_text='dsordesdinho342@gmail.com'
 
   constructor() { }
 
@@ -18,6 +20,17 @@ export class ContactComponent implements OnInit {
     navigator.clipboard.writeText(valor)
 
     this.copyTop='0'
+  }
+
+  bt_click(email:string){
+    this.copyText(email)
+    this.bt_gradient='linear-gradient(to right, #20ff00, #59ffc9)'
+    this.bt_text='copiado!'
+
+    setTimeout(()=>{
+      this.bt_gradient='linear-gradient(to right, var(--color1), var(--color2))'
+      this.bt_text='dsordesdinho342@gmail.com'
+    }, 2000)
   }
 
 }
