@@ -6,9 +6,18 @@
     align-items: center;
     font-size: clamp(1rem, 5vw, 3rem);
     font-family: "Oswald", Arial, Helvetica, sans-serif;
+
+    
     
 }p{
-    width: 60%;
+    width: 70%;
+
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px solid var(--color2);
+
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.39);
+    margin: 10px;
 }
 strong{
     color: var(--color2);

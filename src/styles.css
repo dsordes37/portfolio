@@ -7,6 +7,9 @@
 
 :root{
     --background_color: #000116;
+    --background_color2: #07091f;
+    --background_color3: #0c0d1b;
+    
     --words_color: #ffffff;
     --word_grey: gray;
     --color1: #0008cc;
@@ -24,7 +27,7 @@
     background-color: var(--color1);
 }
 body{
-    background-color: var(--background_color);
+    background-color: var(--background_color3);
     overflow-x: hidden;
     
     color: var(--words_color);
@@ -39,17 +42,40 @@ body{
 }
 
 
-.sobe{
+.right_to_center, .left_to_center, .botton_to_center, .top_to_center{
     overflow: hidden;
 }
-.sobe>*{
+.right_to_center>*, .left_to_center>*, .botton_to_center>*, .top_to_center>*{
     transition: .6s ease-out;
 }
 
-.inactive> *{
+
+
+
+.right_to_center.inactive> *{
     transform: translate(100%, 0);
     opacity: 0;
-}.active> *{
+}
+
+.left_to_center.inactive> *{
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+
+.botton_to_center.inactive> *{
+    transform: translate(0, 100%);
+    opacity: 0;
+}
+
+.top_to_center.inactive> *{
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+
+
+
+
+.active> *{
     transform: translate(0, 0);
     opacity: 1;
 }

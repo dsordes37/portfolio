@@ -13,6 +13,7 @@ import { SkillComponent } from './components/skill/skill.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ContactBtComponent } from './components/contact-bt/contact-bt.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './components/contact/contact.component';
     SkillComponent,
     ProjectCardComponent,
     ProjectListComponent,
-    ContactComponent
+    ContactComponent,
+    ContactBtComponent
   ],
   imports: [
     BrowserModule,

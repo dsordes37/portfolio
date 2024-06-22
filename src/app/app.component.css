@@ -11,4 +11,7 @@
     background-color: #00036638;
 }main{
     padding-top: 4rem;
+}footer>div{
+    margin-top: 10px;
+    box-shadow: 0 -4px 6px 2px rgba(0, 0, 0, 0.404);
 }

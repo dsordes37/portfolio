@@ -1,40 +1,77 @@
+@keyframes ola_anima{
+    from{
+        transform: translateY(-100%);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes front_anima{
+    from{
+        transform: translateX(-100%) scale(1, 1.4);
+    }to{
+        transform: translateX(0) scale(1, 1.4);
+    }
+}
+
+@keyframes dev_anima{
+    from{
+        transform: translateX(100%) scale(1, 1.4);
+    }to{
+        transform: translateX(0) scale(1, 1.4);
+    }
+}
+
 h1{
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
     gap: 2rem;
     
-}h1>span{
+}h1 span{
     font-family: "Oswald", Arial, Helvetica, sans-serif;
-    padding: 0 4rem;
+    padding: 0 5rem;
+}p{
+    overflow: hidden;
 }
 .ola{
     align-self: center;
     font-size: min(7vw, 3rem);
+
+    animation: ola_anima .4s forwards ease-in;
 }.front{
     align-self: flex-start;
     font-size: min(15vw, 9rem);
     line-height: min(15vw, 9rem);
-    transform: scale(1, 1.4);
+    transform: translateX(-100%) scale(1, 1.4);
     background-color: var(--color1);
     background-image: linear-gradient(to right, var(--color1), var(--color2));
     color: var(--background_color);
+
+    border-radius: 0 5px 5px 0;
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.356);
+
+    animation: front_anima .5s .2s forwards ease-in;
+
 }.dev{
     align-self: flex-end;
     font-size: min(18vw, 11rem);
-    transform: scale(1, 1.4);
+    transform: translateX(100%) scale(1, 1.4);
+
+    animation: dev_anima .5s .3s forwards ease-in;
+
 }
 
 @media(max-width:670px){
-    .ola{
+    .ola span{
         font-size: clamp(1rem, 5vw, 2rem);
-    }.front{
+    }.front span{
         font-size: clamp(2rem, 14vw, 5rem);
-    }.dev{
+    }.dev span{
         font-size: clamp(2rem, 14vw, 5rem);
     }
 }@media(max-width:480px){
-    h1>span{
+    h1 span{
         padding: 0 2rem;
     }
 }
