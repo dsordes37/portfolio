@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component, OnInit} from '@angular/core';
 import { projects } from 'src/assets/data/projects';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent implements OnInit, AfterViewInit {
 
   id:string|null='0';
   laptop_img:string='';
@@ -20,15 +22,32 @@ export class ProjectComponent implements OnInit {
   inspirations:{url:string, name:string}[]|null=null;
   logo:string='';
 
-  constructor(private route:ActivatedRoute) {
+  
+
+  constructor(private route:ActivatedRoute, private viewPort:ViewportScroller, private router:Router) {
     this.route.paramMap.subscribe(value=>this.id=value.get('id'));
     this.setValueToContent(this.id)
+
+    this.router.events.subscribe(evt=>{
+      if(evt instanceof NavigationEnd && evt.url.indexOf('project/') != -1){
+        
+        this.viewPort.scrollToAnchor('proj')
+        window.scrollTo(0, 0)
+      }
+    })
+
    }
 
   ngOnInit(): void {
-    
+  }
+
+  ngAfterViewInit(): void {
+    // this.viewPort.scrollToPosition([0, 0])
+
     
   }
+
+  
 
   setValueToContent(id:string|null){
     const result=projects.filter(projects=> projects.id==id)[0]

@@ -7,9 +7,9 @@
     <div class="head">
 
         <nav>
-            <a href="#about">sobre</a>
-            <a href="#skills">habilidades</a>
-            <a href="#projects">projetos</a>
+            <a (click)="goTo('about')">sobre</a>
+            <a (click)="goTo('skills')">habilidades</a>
+            <a (click)="goTo('projects')">projetos</a>
         </nav>
 
         <a [routerLink]="['']" id="logo">
@@ -20,7 +20,7 @@
             <!-- <button id="lang">pt-br</button> -->
         <!-- <button id="contato" popovertarget="cont" >fala comigo</button> -->
         <div class="cont_bt">
-            <app-contact-bt></app-contact-bt>
+            <app-contact-bt (click)="goTo('foot')" ></app-contact-bt>
         </div>
             
 
@@ -34,9 +34,9 @@
     <div id="cell_m" popover>
         <div>
             <nav>
-                <a href="#about">sobre</a>
-                <a href="#skills">habilidades</a>
-                <a href="#projects">projetos</a>
+                <a (click)="goTo('about')">sobre</a>
+                <a (click)="goTo('skills')">habilidades</a>
+                <a (click)="goTo('projects')">projetos</a>
             </nav>
 
 
@@ -51,7 +51,7 @@
             </div>
 
             <div>
-                <app-contact-bt></app-contact-bt>
+                <app-contact-bt (click)="goTo('foot')" ></app-contact-bt>
             </div>
         </div>
     </div>
