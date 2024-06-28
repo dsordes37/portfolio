@@ -1,4 +1,4 @@
-import { Component,OnInit, HostListener} from '@angular/core';
+import { Component, HostListener, AfterViewInit} from '@angular/core';
 import { ScrollAnimateService } from 'src/app/services/scroll-animate.service';
 
 @Component({
@@ -8,12 +8,12 @@ import { ScrollAnimateService } from 'src/app/services/scroll-animate.service';
 })
 
 
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
   title = 'portfolio';
 
   constructor(private animaService:ScrollAnimateService) { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.animaService.create_anima('right_to_center', 'active', 'inactive', .30)
     this.animaService.create_anima('left_to_center', 'active', 'inactive', .30)
 

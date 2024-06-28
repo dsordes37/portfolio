@@ -31,6 +31,7 @@ html{
 }
 body{
     background-color: var(--background_color3);
+    
     overflow-x: hidden;
     
     color: var(--words_color);

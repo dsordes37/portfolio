@@ -21,6 +21,9 @@ export class HeaderComponent implements OnInit {
       this.viewport.scrollToAnchor(id)
     })
   }
+  goToContact(){
+    this.viewport.scrollToAnchor('foot')
+  }
 
 
 }
