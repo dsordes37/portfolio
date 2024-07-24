@@ -9,7 +9,7 @@ export class ContactComponent implements OnInit {
 
   copyTop:string='100%'
   bt_gradient='linear-gradient(to right, var(--color1), var(--color2))'
-  bt_text='dsordesdinho342@gmail.com'
+  bt_text='dsordes.moreira@gmail.com'
 
   constructor() { }
 
@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
 
     setTimeout(()=>{
       this.bt_gradient='linear-gradient(to right, var(--color1), var(--color2))'
-      this.bt_text='dsordesdinho342@gmail.com'
+      this.bt_text=email
     }, 2000)
   }
 
